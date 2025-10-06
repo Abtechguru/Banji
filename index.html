@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banji TV Nigeria - News at 10</title>
+    <title>ABC TV Nigeria</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
+    
     <header>
         <div class="header-container">
             <div class="logo">
                 <div class="logo-placeholder">
-                    <h1>Banji TV <span>NIGERIA</span></h1>
+                    <h1>ABC TV <span>NIGERIA</span></h1>
                 </div>
             </div>
             <ul class="nav-links">
@@ -31,14 +31,12 @@
         </div>
     </header>
 
-    <!-- Main Content -->
+    <
     <div class="container">
-        <!-- Featured Video Section -->
         <main>
             <section class="featured-video">
                 <div class="video-container">
-                    <!-- Video will be uploaded by user -->
-                    <video id="mainVideo" poster="https://placehold.co/800x450/003366/FFFFFF?text=banji+News+Nigeria">
+                    <video id="mainVideo" poster="https://placehold.co/800x450/003366/FFFFFF?text=ABC+News+Nigeria">
                         <source src="morayo.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -84,27 +82,6 @@
             </section>
         </main>
 
-        <!-- Sidebar -->
-        <aside class="sidebar">
-            <section class="breaking-news">
-                <h3 class="section-title"><i class="fas fa-bolt"></i> Breaking News</h3>
-                <div class="news-item">
-                    <h4>Federal Government Announces New Economic Measures</h4>
-                    <p>The government has unveiled a new economic stimulus package aimed at boosting local industries.</p>
-                    <div class="time">10 mins ago</div>
-                </div>
-                <div class="news-item">
-                    <h4>Supreme Court Delivers Judgment on Key Election Case</h4>
-                    <p>The Supreme Court has ruled on the controversial gubernatorial election petition.</p>
-                    <div class="time">25 mins ago</div>
-                </div>
-                <div class="news-item">
-                    <h4>Nigerian Athletes Win Gold at International Competition</h4>
-                    <p>Team Nigeria secures three gold medals at the African Athletics Championship.</p>
-                    <div class="time">45 mins ago</div>
-                </div>
-            </section>
-
             <section class="trending">
                 <h3 class="section-title"><i class="fas fa-fire"></i> Trending Now</h3>
                 <div class="news-item">
@@ -141,13 +118,11 @@
             </section>
         </aside>
     </div>
-
-    <!-- Footer -->
     <footer>
         <div class="footer-container">
             <div class="footer-section">
-                <h3>About Banji TV </h3>
-                <p>Banji TV News is Nigeria's leading 24-hour news and media channel, providing comprehensive coverage of local and international events.</p>
+                <h3>About ABC TV </h3>
+                <p>ABC TV News is Nigeria's leading 24-hour news and media channel, providing comprehensive coverage of local and international events.</p>
                 <div class="social-icons">
                     <a href="#"><i class="fab fa-facebook"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
@@ -166,33 +141,22 @@
                     <li><a href="#">Entertainment</a></li>
                 </ul>
             </div>
-            <div class="footer-section">
-                <h3>Programs</h3>
-                <ul class="footer-links">
-                    <li><a href="#">News at 10</a></li>
-                    <li><a href="#">Business Nigeria</a></li>
-                    <li><a href="#">Sports Tonight</a></li>
-                    <li><a href="#">Entertainment Extra</a></li>
-                    <li><a href="#">Your View</a></li>
-                    <li><a href="#">Saturday Breakfast</a></li>
-                </ul>
-            </div>
+            
             <div class="footer-section">
                 <h3>Contact Us</h3>
                 <ul class="footer-links">
-                    <li><i class="fas fa-map-marker-alt"></i> Banji TV Communications, Lagos</li>
-                    <li><i class="fas fa-phone"></i> +234 1 279 9999</li>
-                    <li><i class="fas fa-envelope"></i> info@banjinews.tv</li>
+                    <li><i class="fas fa-map-marker-alt"></i> ABC TV Communications, Nigeria</li>
+                    <li><i class="fas fa-phone"></i> 08065231846 </li>
+                    <li><i class="fas fa-envelope"></i> info@ABCnews.tv</li>
                 </ul>
             </div>
         </div>
         <div class="copyright">
-            &copy; 2025 Banji TV  Nigeria. All Rights Reserved.
+            &copy; 2025 ABC TV  Nigeria. All Rights Reserved.
         </div>
     </footer>
 
     <script>
-        // Video Player Functionality
         document.addEventListener('DOMContentLoaded', function() {
             const video = document.getElementById('mainVideo');
             const playPauseBtn = document.getElementById('playPauseBtn');
@@ -203,7 +167,7 @@
             const progress = document.getElementById('progress');
             const timeDisplay = document.querySelector('.time-display');
 
-            // Play/Pause functionality
+        
             playPauseBtn.addEventListener('click', function() {
                 if (video.paused) {
                     video.play();
@@ -213,8 +177,6 @@
                     playPauseBtn.innerHTML = '<i class="fas fa-play"></i>';
                 }
             });
-
-            // Mute/Unmute functionality
             muteBtn.addEventListener('click', function() {
                 if (video.muted) {
                     video.muted = false;
@@ -277,8 +239,6 @@
                 const secs = Math.floor(seconds % 60);
                 return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
             }
-
-            // Simulate live updates (for demonstration purposes)
             setInterval(function() {
                 const liveItems = document.querySelectorAll('.live-updates .news-item');
                 const randomItem = liveItems[Math.floor(Math.random() * liveItems.length)];
@@ -293,4 +253,5 @@
         });
     </script>
 </body>
+
 </html>
